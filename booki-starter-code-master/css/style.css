@@ -16,28 +16,14 @@
 body {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-   
 }
 
 .main-container {
     width: 100%;
-    max-width: 1024px;
+    max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
-
 }
-
-.logo {
-    padding: 20px;
-    background: url (image/logo/Booki.png)
-    background size: cover;
-    background-position :left;
-    background color
-    width: 500ppx
-
-}
-
 
 .section-title {
     margin: 0;
@@ -81,18 +67,8 @@ body {
 }
 
 /****** Hebergements ***********/
-.hebergements marseille {
-   display:flex
-   background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-   flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
+.hebergements {
     width: 65%;
-
 }
 
 /****** Populaires ***********/
@@ -138,6 +114,103 @@ body {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+
+*    ACTIVITIES IN MARSEILLE     
+*/
+.activites {
+    margin: 40px 10px 20px 10px;
+}
+.activites-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    transition: all 0.2s;
+    min-height: 400px;
+}
+.vertical-center {
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+    height: 60px;
+    margin-left: 20px;
+}
+.dual-card, .dual-card50 {
+    display: flex;
+    flex-basis: 25%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.largeur {
+    max-width: 350px;
+    min-width: 200px;
+}
+.param-card-activity {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 22%;
+    border-radius: 16px;
+    box-shadow: 0 0 8px var(--dark-grey);
+}
+
+.card-100:hover,
+.card-60:hover,
+.card-50:hover,
+.card-40:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px var(--blue);
+    cursor: pointer;
+}
+.card-100 img,
+.card-60 img,
+.card-50 img,
+.card-40 img {
+    width: 100%;   
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+/*     
+*       CARD HEIGHT    
+*/
+.card-100 img {
+    height: 90%;
+}
+
+.card-60 {
+    height: 57%;  
+}
+.card-60 img {
+    height: 160px;
+}
+
+.card-40 {
+    height: 37%;
+}
+.card-40 img {
+    height: 90px;
+}
+
+.card-50 {
+    height: 47%;
+}
+.card-50 img {
+    height: 120px;
+}
+
+
+
+/* 
+^       def: stars color 
+*/
+.star-blue, .star-grey {
+    background-color: inherit;
+}
+.star-blue {
+    color: var(--blue);
+}
+.star-grey {
+    color: var(--grey);
 }
 
 
