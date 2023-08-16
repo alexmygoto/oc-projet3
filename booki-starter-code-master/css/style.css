@@ -68,12 +68,58 @@ body {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    flex: ;
+    width: 60%;
+    flex-direction: row;
+    
 }
+
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.hebergements-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    width: %;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+}
+
 
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    flex-direction: column;
+    flex
 }
 
 .populaires-title {
@@ -98,7 +144,7 @@ body {
     width: 67%;
     padding-left: 15px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
 }
@@ -116,42 +162,52 @@ body {
     margin-bottom: 5px;
 }
 
-*    ACTIVITIES IN MARSEILLE     
-*/
-.activites {
-    margin: 40px 10px 20px 10px;
+ 
+/****** activites***********/
+.activites-cards {
+    width: 25%;
+    flex-direction: row;
+    flex
 }
-.activites-list {
+
+.activites-title {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    transition: all 0.2s;
-    min-height: 400px;
-}
-.vertical-center {
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin: auto 0;
-    height: 60px;
-    margin-left: 20px;
 }
-.dual-card, .dual-card50 {
+
+.activites-cards .card {
     display: flex;
-    flex-basis: 25%;
+    margin-top: 33px;
+}
+
+.activites-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.activites-cards .card-content {
+    width: %;
+    padding-left: 15px;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
 }
-.largeur {
-    max-width: 350px;
-    min-width: 200px;
+
+.activites-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
 }
-.param-card-activity {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 22%;
-    border-radius: 16px;
-    box-shadow: 0 0 8px var(--dark-grey);
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
 }
+
+
+
 
 .card-100:hover,
 .card-60:hover,
@@ -170,7 +226,8 @@ body {
     border-radius: 16px 16px 0 0;
 }
 
-/*     
+
+
 *       CARD HEIGHT    
 */
 .card-100 img {
