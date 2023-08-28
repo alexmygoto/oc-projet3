@@ -28,8 +28,10 @@
 
                 <form action="#">
                     <div class="search-container">
-                        <h2>Trouver votre hébergement pour des vacances de rêve</h2>
-                        <p>En plein centre ville ou en pleine nature</p>
+                        <div class="search-title">
+                            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                             <p>En plein centre ville ou en pleine nature</p>
+                        </div>                       
                         <i class="fa-solid fa-location-dot"></i>
                         <label for="search" class="accessibility-label">Entrez le nom de la ville</label>
                         <input type="text" id="search" placeholder="Marseille, France">
@@ -39,22 +41,21 @@
                     </div>
                 </form>
 
-                <div class="filters">
-                    <h3>Filtres</h3>
-                    <div class='btn-filter'>
-                        <p><i class="fa-solid fa-money-bill-wave"></i>Économique</p>
-                    </div>
-                    <div class='btn-filter'>
-                        <p><i class="fa-solid fa-child-reaching"></i>Familiale</p>
-                    </div>
-                    <div class='btn-filter'>
+                <div class ="filters container">
+                                <h3>Filtres</h3>
+                                <div class='btn-filter'>
+                                <p><i class="fa-solid fa-money-bill-wave"></i>Économique</p>
+                                 </div>
+                             <div class='btn-filter'>
+                                 <p><i class="fa-solid fa-child-reaching"></i>Familiale</p>
+                              </div>
+                             <div class='btn-filter'>
                         <p><i class="fa-solid fa-heart"></i>Romantique</p>
                     </div>
                     <div class='btn-filter'>
                         <p><i class="fa-solid fa-fire"></i>Nos pépites</p>
-                    </div>
-                </div>
-                <div id="icon-info">
+                    </div>               
+                
                     <i class="fa-solid fa-info"></i>
                     <p>de 500 logements sont disponibles dans cette ville</p>
                 </div>
@@ -243,58 +244,53 @@
                 </section>
             </div>
 
+            <!-- section activites -->
 
-            <div class="activites">
-
-                <section class="activites"> 
+            <section class="activites"> 
                    
-                    <div class="activites-title">
-                        <h2 class="section-title">Activites à Marseille</h2>                     
-                    </div>
-                    <div class="activites-cards">
-                        <article class="card">
-                            <img src="./images/activites/reno-laithienne.jpg" alt="image du vieux port">
-                            <div class="card-content">
-                                <div class="card-txt">
-                                    <h3 class="card-title">vieux port</h3>   
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="activites-cards">
-                        <article class="card">
-                            <img src="./images/activites/paul-hermann.jpg" alt="image d'un fort">
-                            <div class="card-content">
-                                <div class="card-txt">
-                                    <h3 class="card-title">Fort de Pomegues</h3>   
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="activites-cards">
-                        <article class="card">
-                            <img src="./images/activites/kilyan-sockalingum.jpg" alt="image d'un parc">
-                            <div class="card-content">
-                                <div class="card-txt">
-                                    <h3 class="card-title">Parc national des Calanques</h3>   
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="activites-cards">
-                        <article class="card">
-                            <img src="./images/activites/florian-wehde.jpg" alt="image notre dame de la garde">
-                            <div class="card-content">
-                                <div class="card-txt">
-                                    <h3 class="card-title">Notre-Dame-de-la-Garde</h3>   
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </section>
-            </div>
+                <div class="activites-title">
+                    <h2 class="section-title">Activités à Marseille</h2>                     
+                </div>
+                <div class="activites-cards">
 
 
+                    <article class="card">
+                        <img src="./images/activites/reno-laithienne.jpg" alt="Image du vieux port">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Vieux-Port</h3>
+                        </div>
+                    </article>
+                    
+                   
+                    <article class="card">
+                        <img src="./images/activites/paul-hermann.jpg" alt="image d'un fort">
+                         <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Fort de Pomègues</h3>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="./images/activites/paul-hermann.jpg" alt="Image d'un parc national ">
+                         <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Parc national des Calanques</h3>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="./images/activites/florian-wehde.jpg" alt="Image de notre dame de la garde">
+                         <div class="card-content">
+                            <div class="card-txt">
+                                <h3 class="card-title">Notre-Dame-de-la-Garde</h3>            
+                            </div>   
+                        </div>
+                    </article> 
+                </div> 
+            </section>     
 
         </main>
         <footer>
